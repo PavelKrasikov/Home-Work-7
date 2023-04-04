@@ -20,7 +20,7 @@ void FillArr (double[,] arr)
     {
         for (int j = 0; j < arr.GetLength(1); j++)
         {
-            arr[i, j] = new Random().Next (0,10);
+            arr[i, j] = new Random().NextDouble() * 100;
         }
     }
 }
